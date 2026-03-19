@@ -2,9 +2,7 @@
 
 A Unity component for rendering 3D meshes directly inside a Unity Canvas as screen-space UI elements, without using render textures,  extra cameras, or camera-based tricks. Making it a lightweight and fast solution for UI mesh rendering.
 
-
-https://github.com/user-attachments/assets/2ec824ee-f5ba-4aae-aa09-2bc140880c2a
-
+![video](https://github.com/user-attachments/assets/02696d74-445a-4889-936a-6aa1c522faef)
 
 ---
 
