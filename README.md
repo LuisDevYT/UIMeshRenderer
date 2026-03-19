@@ -1,6 +1,6 @@
 # UIMeshRenderer
 
-A Unity component for rendering 3D meshes directly inside a Unity Canvas as screen-space UI elements, without using render textures,  extra cameras, or camera-based tricks. Making it a lightweight and fast solution for UI mesh rendering.
+A Unity component for rendering 3D meshes directly inside a Unity Canvas as `Screen Space - Overlay` UI elements, without using render textures,  extra cameras, or camera-based tricks. Making it a lightweight and fast solution for UI mesh rendering.
 
 ![video](https://github.com/user-attachments/assets/02696d74-445a-4889-936a-6aa1c522faef)
 
