@@ -110,10 +110,19 @@ public class UIMeshRenderer : Graphic
         Vector3 worldPos = rectTransform.position;
         Vector3 canvasLocalPos = canvas.transform.InverseTransformPoint(worldPos);
 
+        Vector3 elementScale = rectTransform.lossyScale;
+        Vector3 canvasScale = canvas.transform.lossyScale;
+
+        Vector3 relativeScale = new Vector3(
+            elementScale.x / canvasScale.x,
+            elementScale.y / canvasScale.y,
+            elementScale.z / canvasScale.z
+        );
+
         Vector3 origin = canvasLocalPos;
 
         if (useMeshCenter)
-            origin += mesh.bounds.center;
+            origin += Vector3.Scale(mesh.bounds.center, relativeScale);
 
         materialInstance.SetVector("_LocalPosition", origin);
         materialInstance.SetVector("_Scale", new Vector3(scaleX, scaleY, Mathf.Min(scaleX, scaleY)) * scaleMultiplier);
