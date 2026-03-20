@@ -40,4 +40,5 @@ A Unity component for rendering 3D meshes directly inside a Unity Canvas as `Scr
 1. Copy `UIMeshRenderer.cs` and `UIMeshRenderer.shader` into your project.
 2. Create a material using the `UI/UIMeshRenderer` shader.
 3. Add a `UIMeshRenderer` component to any UI `RectTransform`.
-4. Assign your `Mesh`, `Material`, and optionally a `Texture`.
+4. Enable `Read/Write` on the mesh import settings
+5. Assign your `Mesh`, `Material`, and optionally a `Texture`.
